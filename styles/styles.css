@@ -347,9 +347,24 @@ html {
 }
 
 body {
+  background-color: #1f4d56;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
+}
+
+a {
+  color: #e68482;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+body.design {
+  background-color: #fff;
 }
 
 /* GRID */
@@ -378,7 +393,7 @@ body {
 
 /* header rules */
 header {
-  background-color: #9b87b8;
+  background-color: #102d33;
 }
 
 header img {
@@ -415,7 +430,7 @@ button#hamburgerBtn {
 }
 
 nav {
-  background-color: #23cfa7;
+  background-color: #102d33;
 }
 
 nav ul {
@@ -436,7 +451,7 @@ nav a {
 }
 
 nav li.active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #1f4d56;
 }
 
 nav a:hover {
@@ -500,7 +515,7 @@ main p {
 }
 
 footer {
-  background-color: #9b87b8;
+  background-color: #0b2427;
   font-size: 1.2rem;
 }
 
@@ -517,6 +532,76 @@ footer ul {
 
 footer li {
   padding-bottom: .3rem;
+}
+
+.accent {
+  color: #e68482;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  justify-items: left;
+}
+
+.default {
+  color: #666;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.label {
+  margin-top: 10px;
+}
+
+.circle {
+  border-radius: 25px;
+  filter: drop-shadow(2px 2px 4px #000);
+  height: 50px;
+  width: 50px;
+}
+
+.odd {
+  background-color: #102d33;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  font-size: .7rem;
+}
+
+.primary-background {
+  background-color: #1f4d56;
+}
+
+.accent-background {
+  background-color: #e68482;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.darkgreen-background {
+  background-color: #00373d;
+}
+
+.sacramento-state-green-background {
+  background-color: #012f34;
+}
+
+.title {
+  font-size: .8rem;
+  font-weight: bold;
 }
 
 /* 12 COLUMN GRID SYSTEM */
@@ -682,4 +767,3 @@ footer li {
     flex-basis: 100%;
   }
 }
-/*# sourceMappingURL=styles.css.map */

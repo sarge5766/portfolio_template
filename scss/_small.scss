@@ -3,9 +3,18 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
+    background-color: $primary;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 300; 
+}
+
+a { color: $accent; text-decoration: none;}
+
+a:hover { color: #666; text-decoration: underline;}
+
+body.design {
+    background-color: $white;
 }
 
 /* GRID */
@@ -23,7 +32,7 @@ body {
 
 /* header rules */
 header {
-    background-color: $primaryColor;
+    background-color: $alternate;
 
     img {
         float: left; 
@@ -55,7 +64,7 @@ button#hamburgerBtn {
     padding: 0 30px 0 2vw;
 }
 nav { 
-    background-color: $secondaryColor;
+    background-color: $alternate;
     
     ul{margin:0; padding: 0;}
     li {list-style-type: none;}
@@ -65,7 +74,7 @@ nav {
         color: #eee;
         text-align: center;
         text-decoration: none; }
-    li.active {background-color: rgba(0,0,0,0.5);}
+    li.active {background-color: $primary}
     a:hover {background-color: rgba(0,0,0,0.2);}
     ul.open {display: block;}
     ul {display: none;}
@@ -110,7 +119,7 @@ main {
 }
 
 footer{
-    background-color: $primaryColor;
+    background-color: $secondary;
     font-size: 1.2rem;
 
     h2 {
@@ -125,6 +134,50 @@ footer{
         li {padding-bottom: .3rem;}
 }
 
+.accent { color: $accent; }
+
+.grid{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+    justify-items: left;
+}
+
+.default { color: $default; width: 100%; text-align: right; padding-right: 20px; }
+
+// .item { text-align: center; }
+.label { margin-top: 10px; }
+
+.circle {
+    border-radius: 25px;
+    filter: drop-shadow(2px 2px 4px #000);
+    height: 50px;
+    // margin: 0 auto;
+    width: 50px;
+}
+
+.odd {
+    background-color: $alternate;
+}
+
+ul { list-style: none; margin: 0; padding: 0;}
+
+li { margin: 0; padding: 0; font-size: .7rem; }
+
+.primary-background { background-color: $primary; }
+
+.accent-background { background-color: $accent; }
+
+.white-background { background-color: $white; }
+
+.darkgreen-background { background-color: $darkgreen-background; }
+
+.sacramento-state-green-background { background-color: $sacramento-state-green-background; }
+
+.title {
+    font-size: .8rem;
+    font-weight: bold;
+}
 
 /* 12 COLUMN GRID SYSTEM */
 // .row { 
